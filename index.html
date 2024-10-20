@@ -9,296 +9,288 @@
   </head>
   <body class="max-w-screen-2xl mx-auto bg-[#F2F4F8]">
     <!-- navbar -->
-    <header>
-      <!-- navbar -->
-      <nav
-        class="bg-[#081621] flex items-center justify-between text-white py-4 px-10"
+    <nav
+      class="bg-[#081621] flex items-center justify-between text-white py-4 px-10"
+    >
+      <img
+        src="https://www.startech.com.bd/image/catalog/logo.png"
+        height="52"
+        width="117"
+        alt=""
+      />
+      <div
+        class="w-full flex py-1 items-center rounded-md px-3 bg-white max-w-lg"
       >
-        <img
-          src="https://www.startech.com.bd/image/catalog/logo.png"
-          height="52"
-          width="117"
-          alt=""
+        <input
+          type="text"
+          placeholder="Search..."
+          class="w-full border-none focus:ring-0 text-black"
         />
-        <div
-          class="w-full flex py-1 items-center rounded-md px-3 bg-white max-w-lg"
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          height="24px"
+          viewBox="0 -960 960 960"
+          width="24px"
+          fill="#081621"
         >
-          <input
-            type="text"
-            placeholder="Search..."
-            class="w-full border-none focus:ring-0 text-black"
+          <path
+            d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"
           />
+        </svg>
+      </div>
+      <div class="flex items-center gap-5">
+        <div class="flex items-center gap-3">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="28px"
+            viewBox="0 -960 960 960"
+            width="28px"
+            fill="#EF4A23"
+          >
+            <path
+              d="M160-80v-440H80v-240h208q-5-9-6.5-19t-1.5-21q0-50 35-85t85-35q23 0 43 8.5t37 23.5q17-16 37-24t43-8q50 0 85 35t35 85q0 11-2 20.5t-6 19.5h208v240h-80v440H160Zm400-760q-17 0-28.5 11.5T520-800q0 17 11.5 28.5T560-760q17 0 28.5-11.5T600-800q0-17-11.5-28.5T560-840Zm-200 40q0 17 11.5 28.5T400-760q17 0 28.5-11.5T440-800q0-17-11.5-28.5T400-840q-17 0-28.5 11.5T360-800ZM160-680v80h280v-80H160Zm280 520v-360H240v360h200Zm80 0h200v-360H520v360Zm280-440v-80H520v80h280Z"
+            />
+          </svg>
+          <div>
+            <h1 class="text-lg leading-tight">Offers</h1>
+            <p class="text-xs text-slate-400">Latest Offers</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-3">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="28px"
+            viewBox="0 -960 960 960"
+            width="28px"
+            fill="#EF4A23"
+            class="blinking-text"
+          >
+            <path
+              d="M620-520q25 0 42.5-17.5T680-580q0-25-17.5-42.5T620-640q-25 0-42.5 17.5T560-580q0 25 17.5 42.5T620-520Zm-280 0q25 0 42.5-17.5T400-580q0-25-17.5-42.5T340-640q-25 0-42.5 17.5T280-580q0 25 17.5 42.5T340-520Zm140 260q68 0 123.5-38.5T684-400h-66q-22 37-58.5 58.5T480-320q-43 0-79.5-21.5T342-400h-66q25 63 80.5 101.5T480-260Zm0 180q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-400Zm0 320q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Z"
+            />
+          </svg>
+          <div>
+            <h1 class="text-lg leading-tight">Happy Hour</h1>
+            <p class="text-xs text-slate-400">Special Deals</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-3">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="28px"
+            viewBox="0 -960 960 960"
+            width="28px"
+            fill="#EF4A23"
+          >
+            <path
+              d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z"
+            />
+          </svg>
+
+          <div>
+            <h1 class="text-lg leading-tight">Account</h1>
+            <p class="text-xs text-slate-400">
+              <a href="#">Register</a> or <a href="#">Login</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <button class="my-gradient-background px-6 py-3 rounded-lg">
+        PC Builder
+      </button>
+    </nav>
+    <!-- navmenu -->
+    <section class="bg-white sticky z-50 top-0 shadow-xl">
+      <ul class="flex items-start w-[95%] mx-auto font-semibold gap-5 text-sm">
+        <li class="cursor-pointer py-3 relative group">
+          Desktop
+          <div
+            class="absolute hidden border-t-4 top-10 border-[#EF4A23] group-hover:block bg-white shadow-2xl min-w-72"
+          >
+            <ul class="px-5 py-3 space-y-1 font-normal">
+              <li>Gaming PC</li>
+              <li>Developing PC</li>
+              <li>Designer PC</li>
+              <li>School PC</li>
+            </ul>
+          </div>
+        </li>
+        <li class="py-3 cursor-pointer">Laptop</li>
+      </ul>
+    </section>
+    <!-- banner -->
+    <section class="w-[95%] mx-auto flex gap-8 h-[500px] mt-10">
+      <div class="w-3/4 h-full">
+        <img
+          src="https://www.startech.com.bd/image/cache/catalog/home/queue-banner-home-service-982x500.png"
+          alt=""
+          class="w-full rounded-md h-full"
+        />
+      </div>
+      <div class="w-1/4 flex h-full flex-col gap-7 justify-between">
+        <div
+          class="bg-[#FFE8A1] flex-1 rounded-md px-7 text-center space-y-4 py-6"
+        >
+          <div>
+            <h5 class="text-base font-medium">Compatre Products</h5>
+            <p class="text-sm text-slate-600">Choose Two Products to Compare</p>
+          </div>
+          <div
+            class="w-full flex items-center rounded-md px-3 bg-white max-w-lg"
+          >
+            <input
+              type="text"
+              placeholder="Search..."
+              class="w-full border-none focus:ring-0 text-black"
+            />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="#081621"
+            >
+              <path
+                d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"
+              />
+            </svg>
+          </div>
+          <div
+            class="w-full flex items-center rounded-md px-3 bg-white max-w-lg"
+          >
+            <input
+              type="text"
+              placeholder="Search..."
+              class="w-full border-none focus:ring-0 text-black"
+            />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="#081621"
+            >
+              <path
+                d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"
+              />
+            </svg>
+          </div>
+          <button
+            class="border-2 rounded-md text-center w-full py-2 transition-all duration-300 ease-linear hover:bg-[#3749bb] hover:text-white text-[#3749bb] border-[#3749bb] font-medium"
+          >
+            View Comparison
+          </button>
+        </div>
+        <img
+          src="https://www.startech.com.bd/image/catalog/home/banner/small/Shape-Your-Career-with-Us.png1.webp"
+          alt=""
+          class="w-full rounded-md"
+        />
+      </div>
+    </section>
+    <!-- banner service -->
+    <section class="w-[95%] mx-auto grid grid-cols-4 items-center gap-5 my-10">
+      <div
+        class="flex shadow-sm px-4 py-3 rounded-lg bg-white gap-3 items-center"
+      >
+        <div
+          class="bg-[#EF4A23] w-12 h-12 rounded-full flex flex-col items-center justify-center"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             height="24px"
             viewBox="0 -960 960 960"
             width="24px"
-            fill="#081621"
+            fill="#e8eaed"
           >
             <path
-              d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"
+              d="M80-160q-33 0-56.5-23.5T0-240h160q-33 0-56.5-23.5T80-320v-440q0-33 23.5-56.5T160-840h640q33 0 56.5 23.5T880-760v440q0 33-23.5 56.5T800-240h160q0 33-23.5 56.5T880-160H80Zm400-40q17 0 28.5-11.5T520-240q0-17-11.5-28.5T480-280q-17 0-28.5 11.5T440-240q0 17 11.5 28.5T480-200ZM160-320h640v-440H160v440Zm0 0v-440 440Z"
             />
           </svg>
         </div>
-        <div class="flex items-center gap-5">
-          <div class="flex items-center gap-3">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              height="28px"
-              viewBox="0 -960 960 960"
-              width="28px"
-              fill="#EF4A23"
-            >
-              <path
-                d="M160-80v-440H80v-240h208q-5-9-6.5-19t-1.5-21q0-50 35-85t85-35q23 0 43 8.5t37 23.5q17-16 37-24t43-8q50 0 85 35t35 85q0 11-2 20.5t-6 19.5h208v240h-80v440H160Zm400-760q-17 0-28.5 11.5T520-800q0 17 11.5 28.5T560-760q17 0 28.5-11.5T600-800q0-17-11.5-28.5T560-840Zm-200 40q0 17 11.5 28.5T400-760q17 0 28.5-11.5T440-800q0-17-11.5-28.5T400-840q-17 0-28.5 11.5T360-800ZM160-680v80h280v-80H160Zm280 520v-360H240v360h200Zm80 0h200v-360H520v360Zm280-440v-80H520v80h280Z"
-              />
-            </svg>
-            <div>
-              <h1 class="text-lg leading-tight">Offers</h1>
-              <p class="text-xs text-slate-400">Latest Offers</p>
-            </div>
-          </div>
-          <div class="flex items-center gap-3">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              height="28px"
-              viewBox="0 -960 960 960"
-              width="28px"
-              fill="#EF4A23"
-              class="blinking-text"
-            >
-              <path
-                d="M620-520q25 0 42.5-17.5T680-580q0-25-17.5-42.5T620-640q-25 0-42.5 17.5T560-580q0 25 17.5 42.5T620-520Zm-280 0q25 0 42.5-17.5T400-580q0-25-17.5-42.5T340-640q-25 0-42.5 17.5T280-580q0 25 17.5 42.5T340-520Zm140 260q68 0 123.5-38.5T684-400h-66q-22 37-58.5 58.5T480-320q-43 0-79.5-21.5T342-400h-66q25 63 80.5 101.5T480-260Zm0 180q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-400Zm0 320q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Z"
-              />
-            </svg>
-            <div>
-              <h1 class="text-lg leading-tight">Happy Hour</h1>
-              <p class="text-xs text-slate-400">Special Deals</p>
-            </div>
-          </div>
-          <div class="flex items-center gap-3">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              height="28px"
-              viewBox="0 -960 960 960"
-              width="28px"
-              fill="#EF4A23"
-            >
-              <path
-                d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z"
-              />
-            </svg>
-
-            <div>
-              <h1 class="text-lg leading-tight">Account</h1>
-              <p class="text-xs text-slate-400">
-                <a href="#">Register</a> or <a href="#">Login</a>
-              </p>
-            </div>
-          </div>
+        <div>
+          <h1 class="text-xl font-medium">Laptop Finder</h1>
+          <h5 class="text-base text-slate-800">Find Your Laptop Easily</h5>
         </div>
-        <button class="my-gradient-background px-6 py-3 rounded-lg">
-          PC Builder
-        </button>
-      </nav>
-      <!-- navmenu -->
-      <section class="bg-white sticky top-0 shadow-xl">
-        <ul
-          class="flex items-start w-[95%] mx-auto font-semibold gap-5 text-sm"
-        >
-          <li class="cursor-pointer py-3 relative group">
-            Desktop
-            <div
-              class="absolute hidden border-t-4 top-10 border-[#EF4A23] group-hover:block bg-white shadow-2xl min-w-72"
-            >
-              <ul class="px-5 py-3 space-y-1 font-normal">
-                <li>Gaming PC</li>
-                <li>Developing PC</li>
-                <li>Designer PC</li>
-                <li>School PC</li>
-              </ul>
-            </div>
-          </li>
-          <li class="py-3 cursor-pointer">Laptop</li>
-        </ul>
-      </section>
-      <!-- banner -->
-      <section class="w-[95%] mx-auto flex gap-8 h-[500px] mt-10">
-        <div class="w-3/4 h-full">
-          <img
-            src="https://www.startech.com.bd/image/cache/catalog/home/queue-banner-home-service-982x500.png"
-            alt=""
-            class="w-full rounded-md h-full"
-          />
-        </div>
-        <div class="w-1/4 flex h-full flex-col gap-7 justify-between">
-          <div
-            class="bg-[#FFE8A1] flex-1 rounded-md px-7 text-center space-y-4 py-6"
-          >
-            <div>
-              <h5 class="text-base font-medium">Compatre Products</h5>
-              <p class="text-sm text-slate-600">
-                Choose Two Products to Compare
-              </p>
-            </div>
-            <div
-              class="w-full flex items-center rounded-md px-3 bg-white max-w-lg"
-            >
-              <input
-                type="text"
-                placeholder="Search..."
-                class="w-full border-none focus:ring-0 text-black"
-              />
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="24px"
-                viewBox="0 -960 960 960"
-                width="24px"
-                fill="#081621"
-              >
-                <path
-                  d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"
-                />
-              </svg>
-            </div>
-            <div
-              class="w-full flex items-center rounded-md px-3 bg-white max-w-lg"
-            >
-              <input
-                type="text"
-                placeholder="Search..."
-                class="w-full border-none focus:ring-0 text-black"
-              />
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="24px"
-                viewBox="0 -960 960 960"
-                width="24px"
-                fill="#081621"
-              >
-                <path
-                  d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"
-                />
-              </svg>
-            </div>
-            <button
-              class="border-2 rounded-md text-center w-full py-2 transition-all duration-300 ease-linear hover:bg-[#3749bb] hover:text-white text-[#3749bb] border-[#3749bb] font-medium"
-            >
-              View Comparison
-            </button>
-          </div>
-          <img
-            src="https://www.startech.com.bd/image/catalog/home/banner/small/Shape-Your-Career-with-Us.png1.webp"
-            alt=""
-            class="w-full rounded-md"
-          />
-        </div>
-      </section>
-      <!-- banner service -->
-      <section
-        class="w-[95%] mx-auto grid grid-cols-4 items-center gap-5 my-10"
+      </div>
+      <div
+        class="flex shadow-sm px-4 py-3 rounded-lg bg-white gap-3 items-center"
       >
         <div
-          class="flex shadow-sm px-4 py-3 rounded-lg bg-white gap-3 items-center"
+          class="bg-[#EF4A23] w-12 h-12 rounded-full flex flex-col items-center justify-center"
         >
-          <div
-            class="bg-[#EF4A23] w-12 h-12 rounded-full flex flex-col items-center justify-center"
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24px"
+            viewBox="0 -960 960 960"
+            width="24px"
+            fill="#e8eaed"
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              height="24px"
-              viewBox="0 -960 960 960"
-              width="24px"
-              fill="#e8eaed"
-            >
-              <path
-                d="M80-160q-33 0-56.5-23.5T0-240h160q-33 0-56.5-23.5T80-320v-440q0-33 23.5-56.5T160-840h640q33 0 56.5 23.5T880-760v440q0 33-23.5 56.5T800-240h160q0 33-23.5 56.5T880-160H80Zm400-40q17 0 28.5-11.5T520-240q0-17-11.5-28.5T480-280q-17 0-28.5 11.5T440-240q0 17 11.5 28.5T480-200ZM160-320h640v-440H160v440Zm0 0v-440 440Z"
-              />
-            </svg>
-          </div>
-          <div>
-            <h1 class="text-xl font-medium">Laptop Finder</h1>
-            <h5 class="text-base text-slate-800">Find Your Laptop Easily</h5>
-          </div>
+            <path
+              d="M80-160q-33 0-56.5-23.5T0-240h160q-33 0-56.5-23.5T80-320v-440q0-33 23.5-56.5T160-840h640q33 0 56.5 23.5T880-760v440q0 33-23.5 56.5T800-240h160q0 33-23.5 56.5T880-160H80Zm400-40q17 0 28.5-11.5T520-240q0-17-11.5-28.5T480-280q-17 0-28.5 11.5T440-240q0 17 11.5 28.5T480-200ZM160-320h640v-440H160v440Zm0 0v-440 440Z"
+            />
+          </svg>
         </div>
+        <div>
+          <h1 class="text-xl font-medium">Laptop Finder</h1>
+          <h5 class="text-base text-slate-800">Find Your Laptop Easily</h5>
+        </div>
+      </div>
+      <div
+        class="flex shadow-sm px-4 py-3 rounded-lg bg-white gap-3 items-center"
+      >
         <div
-          class="flex shadow-sm px-4 py-3 rounded-lg bg-white gap-3 items-center"
+          class="bg-[#EF4A23] w-12 h-12 rounded-full flex flex-col items-center justify-center"
         >
-          <div
-            class="bg-[#EF4A23] w-12 h-12 rounded-full flex flex-col items-center justify-center"
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24px"
+            viewBox="0 -960 960 960"
+            width="24px"
+            fill="#e8eaed"
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              height="24px"
-              viewBox="0 -960 960 960"
-              width="24px"
-              fill="#e8eaed"
-            >
-              <path
-                d="M80-160q-33 0-56.5-23.5T0-240h160q-33 0-56.5-23.5T80-320v-440q0-33 23.5-56.5T160-840h640q33 0 56.5 23.5T880-760v440q0 33-23.5 56.5T800-240h160q0 33-23.5 56.5T880-160H80Zm400-40q17 0 28.5-11.5T520-240q0-17-11.5-28.5T480-280q-17 0-28.5 11.5T440-240q0 17 11.5 28.5T480-200ZM160-320h640v-440H160v440Zm0 0v-440 440Z"
-              />
-            </svg>
-          </div>
-          <div>
-            <h1 class="text-xl font-medium">Laptop Finder</h1>
-            <h5 class="text-base text-slate-800">Find Your Laptop Easily</h5>
-          </div>
+            <path
+              d="M80-160q-33 0-56.5-23.5T0-240h160q-33 0-56.5-23.5T80-320v-440q0-33 23.5-56.5T160-840h640q33 0 56.5 23.5T880-760v440q0 33-23.5 56.5T800-240h160q0 33-23.5 56.5T880-160H80Zm400-40q17 0 28.5-11.5T520-240q0-17-11.5-28.5T480-280q-17 0-28.5 11.5T440-240q0 17 11.5 28.5T480-200ZM160-320h640v-440H160v440Zm0 0v-440 440Z"
+            />
+          </svg>
         </div>
+        <div>
+          <h1 class="text-xl font-medium">Laptop Finder</h1>
+          <h5 class="text-base text-slate-800">Find Your Laptop Easily</h5>
+        </div>
+      </div>
+      <div
+        class="flex shadow-sm px-4 py-3 rounded-lg bg-white gap-3 items-center"
+      >
         <div
-          class="flex shadow-sm px-4 py-3 rounded-lg bg-white gap-3 items-center"
+          class="bg-[#EF4A23] w-12 h-12 rounded-full flex flex-col items-center justify-center"
         >
-          <div
-            class="bg-[#EF4A23] w-12 h-12 rounded-full flex flex-col items-center justify-center"
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24px"
+            viewBox="0 -960 960 960"
+            width="24px"
+            fill="#e8eaed"
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              height="24px"
-              viewBox="0 -960 960 960"
-              width="24px"
-              fill="#e8eaed"
-            >
-              <path
-                d="M80-160q-33 0-56.5-23.5T0-240h160q-33 0-56.5-23.5T80-320v-440q0-33 23.5-56.5T160-840h640q33 0 56.5 23.5T880-760v440q0 33-23.5 56.5T800-240h160q0 33-23.5 56.5T880-160H80Zm400-40q17 0 28.5-11.5T520-240q0-17-11.5-28.5T480-280q-17 0-28.5 11.5T440-240q0 17 11.5 28.5T480-200ZM160-320h640v-440H160v440Zm0 0v-440 440Z"
-              />
-            </svg>
-          </div>
-          <div>
-            <h1 class="text-xl font-medium">Laptop Finder</h1>
-            <h5 class="text-base text-slate-800">Find Your Laptop Easily</h5>
-          </div>
+            <path
+              d="M80-160q-33 0-56.5-23.5T0-240h160q-33 0-56.5-23.5T80-320v-440q0-33 23.5-56.5T160-840h640q33 0 56.5 23.5T880-760v440q0 33-23.5 56.5T800-240h160q0 33-23.5 56.5T880-160H80Zm400-40q17 0 28.5-11.5T520-240q0-17-11.5-28.5T480-280q-17 0-28.5 11.5T440-240q0 17 11.5 28.5T480-200ZM160-320h640v-440H160v440Zm0 0v-440 440Z"
+            />
+          </svg>
         </div>
-        <div
-          class="flex shadow-sm px-4 py-3 rounded-lg bg-white gap-3 items-center"
-        >
-          <div
-            class="bg-[#EF4A23] w-12 h-12 rounded-full flex flex-col items-center justify-center"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              height="24px"
-              viewBox="0 -960 960 960"
-              width="24px"
-              fill="#e8eaed"
-            >
-              <path
-                d="M80-160q-33 0-56.5-23.5T0-240h160q-33 0-56.5-23.5T80-320v-440q0-33 23.5-56.5T160-840h640q33 0 56.5 23.5T880-760v440q0 33-23.5 56.5T800-240h160q0 33-23.5 56.5T880-160H80Zm400-40q17 0 28.5-11.5T520-240q0-17-11.5-28.5T480-280q-17 0-28.5 11.5T440-240q0 17 11.5 28.5T480-200ZM160-320h640v-440H160v440Zm0 0v-440 440Z"
-              />
-            </svg>
-          </div>
-          <div>
-            <h1 class="text-xl font-medium">Laptop Finder</h1>
-            <h5 class="text-base text-slate-800">Find Your Laptop Easily</h5>
-          </div>
+        <div>
+          <h1 class="text-xl font-medium">Laptop Finder</h1>
+          <h5 class="text-base text-slate-800">Find Your Laptop Easily</h5>
         </div>
-      </section>
-      <!-- Marquee -->
-      <section class="bg-white rounded-full py-1 w-[95%] mx-auto px-5 my-8">
-        <marquee class="pt-2 pb-1 text-sm leading-none"
-          >20th October, Sunday, all our outlets are open except IDB Outlet.
-          Additionally, our online activities are open and operational.</marquee
-        >
-      </section>
-    </header>
+      </div>
+    </section>
+    <!-- Marquee -->
+    <section class="bg-white rounded-full py-1 w-[95%] mx-auto px-5 my-8">
+      <marquee class="pt-2 pb-1 text-sm leading-none"
+        >20th October, Sunday, all our outlets are open except IDB Outlet.
+        Additionally, our online activities are open and operational.</marquee
+      >
+    </section>
+
     <!-- container -->
     <main>
       <!-- Featured Category -->
@@ -370,7 +362,38 @@
         <h1 class="text-xl font-semibold mb-2">Featured Products</h1>
         <p class="text-base">Check & Get Your Desired Product!</p>
         <div class="grid grid-cols-5 mt-8 gap-3">
-          <div>product</div>
+          <div
+            class="relative bg-white h-[382px] flex flex-col rounded-lg shadow-md p-6"
+          >
+            <!-- Save Badge -->
+            <div
+              class="absolute top-5 left-0 bg-purple-600 text-white text-xs px-2 py-1 rounded-r-full"
+            >
+              Save: 6,999৳
+            </div>
+
+            <!-- Product Image -->
+            <img
+              src="https://www.startech.com.bd/image/cache/catalog/mobile/tcl/40-se/40-se-purple-200x200.webp"
+              alt="TCL 40 SE"
+              class="w-full h-56 object-contain mx-auto"
+            />
+
+            <!-- Product Info -->
+            <div class="mt-4 flex flex-col flex-1 justify-between">
+              <a
+                href="#"
+                class="text-md text-left hover:text-red-500 hover:underline duration-300 font-medium"
+                >TCL 40 SE (6/256GB)</a
+              >
+              <div class="mt-2 text-left">
+                <span class="text-red-500 text-xl font-semibold">11,999৳</span>
+                <span class="text-gray-500 text-sm line-through ml-2"
+                  >15,500৳</span
+                >
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>
