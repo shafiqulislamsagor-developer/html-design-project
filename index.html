@@ -3,322 +3,103 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Star Tech Copy</title>
+    <link rel="stylesheet" href="index.css" />
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
-    <style>
-      /* Custom styles to match some specific design parts */
-      .custom-btn-orange {
-        background-color: #f97316;
-      }
-      .footer-bg {
-        background-color: #0e141b;
-      }
-      .footer-text {
-        color: #cbd5e1;
-      }
-      .footer-text-hover:hover {
-        color: #f97316;
-      }
-    </style>
   </head>
-
-  <body class="bg-gray-100">
-    <!-- Navbar -->
-    <header class="bg-blue-900 text-white p-3">
-      <div class="container mx-auto flex justify-between items-center">
-        <!-- Logo -->
-        <div class="flex items-center space-x-4">
-          <a href="#" class="text-2xl font-bold">
-            <img
-              src="https://via.placeholder.com/150x50"
-              alt="Logo"
-              class="h-10"
+  <body class="max-w-screen-2xl mx-auto">
+    <!-- navbar -->
+    <header>
+      <nav
+        class="bg-[#081621] flex items-center justify-between text-white py-4 px-10"
+      >
+        <img
+          src="https://www.startech.com.bd/image/catalog/logo.png"
+          height="52"
+          width="117"
+          alt=""
+        />
+        <div
+          class="w-full flex py-1 items-center rounded-md px-3 bg-white max-w-lg"
+        >
+          <input
+            type="text"
+            placeholder="Search..."
+            class="w-full border-none focus:ring-0 text-black"
+          />
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24px"
+            viewBox="0 -960 960 960"
+            width="24px"
+            fill="#081621"
+          >
+            <path
+              d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"
             />
-          </a>
+          </svg>
         </div>
-
-        <!-- Search Bar and Account -->
-        <div class="flex items-center space-x-4">
-          <div class="relative">
-            <input
-              type="text"
-              placeholder="Search and Select Product"
-              class="p-2 pl-8 rounded-md text-black w-96"
-            />
-            <button class="bg-yellow-500 px-4 py-2 text-black rounded-r-md">
-              Search
-            </button>
+        <div class="flex items-center gap-5">
+          <div class="flex items-center gap-3">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="28px"
+              viewBox="0 -960 960 960"
+              width="28px"
+              fill="#EF4A23"
+            >
+              <path
+                d="M160-80v-440H80v-240h208q-5-9-6.5-19t-1.5-21q0-50 35-85t85-35q23 0 43 8.5t37 23.5q17-16 37-24t43-8q50 0 85 35t35 85q0 11-2 20.5t-6 19.5h208v240h-80v440H160Zm400-760q-17 0-28.5 11.5T520-800q0 17 11.5 28.5T560-760q17 0 28.5-11.5T600-800q0-17-11.5-28.5T560-840Zm-200 40q0 17 11.5 28.5T400-760q17 0 28.5-11.5T440-800q0-17-11.5-28.5T400-840q-17 0-28.5 11.5T360-800ZM160-680v80h280v-80H160Zm280 520v-360H240v360h200Zm80 0h200v-360H520v360Zm280-440v-80H520v80h280Z"
+              />
+            </svg>
+            <div>
+              <h1 class="text-lg leading-tight">Offers</h1>
+              <p class="text-xs text-slate-400">Latest Offers</p>
+            </div>
           </div>
-          <div>
-            <button class="text-white">Offers</button>
-            <button class="text-white">Happy Hour</button>
-            <button class="text-white">Account</button>
+          <div class="flex items-center gap-3">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="28px"
+              viewBox="0 -960 960 960"
+              width="28px"
+              fill="#EF4A23"
+              class="blinking-text"
+            >
+              <path
+                d="M620-520q25 0 42.5-17.5T680-580q0-25-17.5-42.5T620-640q-25 0-42.5 17.5T560-580q0 25 17.5 42.5T620-520Zm-280 0q25 0 42.5-17.5T400-580q0-25-17.5-42.5T340-640q-25 0-42.5 17.5T280-580q0 25 17.5 42.5T340-520Zm140 260q68 0 123.5-38.5T684-400h-66q-22 37-58.5 58.5T480-320q-43 0-79.5-21.5T342-400h-66q25 63 80.5 101.5T480-260Zm0 180q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-400Zm0 320q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Z"
+              />
+            </svg>
+            <div>
+              <h1 class="text-lg leading-tight">Happy Hour</h1>
+              <p class="text-xs text-slate-400">Special Deals</p>
+            </div>
           </div>
-        </div>
-      </div>
-    </header>
+          <div class="flex items-center gap-3">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="28px"
+              viewBox="0 -960 960 960"
+              width="28px"
+              fill="#EF4A23"
+            >
+              <path
+                d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z"
+              />
+            </svg>
 
-    <!-- Main Content -->
-    <main class="container mx-auto mt-4">
-      <div class="grid grid-cols-12 gap-4">
-        <!-- Left Side (Banner) -->
-        <div class="col-span-8">
-          <div class="relative bg-white rounded-md shadow-md">
-            <img
-              src="https://via.placeholder.com/600x300"
-              alt="Repair Banner"
-              class="w-full h-64 object-cover rounded-md"
-            />
-            <div class="absolute top-4 left-6 text-white">
-              <h2 class="text-3xl font-bold">ঘরে বসে হবে রিপেয়ার</h2>
-              <p class="text-xl mt-2">ল্যাপটপ, ডেক্সটপ বা লিন্টার</p>
-              <p
-                class="text-2xl font-semibold mt-4 bg-red-600 inline-block p-2 rounded-md"
-              >
-                মাত্র মাত্র ১৬৯০৳
+            <div>
+              <h1 class="text-lg leading-tight">Account</h1>
+              <p class="text-xs text-slate-400">
+                <a href="#">Register</a> or <a href="#">Login</a>
               </p>
             </div>
           </div>
         </div>
-
-        <!-- Right Side (Sidebar) -->
-        <div class="col-span-4 space-y-4">
-          <!-- Product Compare Section -->
-          <div class="bg-white p-4 rounded-md shadow-md">
-            <h3 class="font-bold text-lg">Compare Products</h3>
-            <input
-              type="text"
-              placeholder="Search and Select Product"
-              class="mt-2 p-2 w-full border rounded-md"
-            />
-            <input
-              type="text"
-              placeholder="Search and Select Product"
-              class="mt-2 p-2 w-full border rounded-md"
-            />
-            <button class="bg-yellow-500 text-white w-full mt-2 p-2 rounded-md">
-              View Comparison
-            </button>
-          </div>
-
-          <!-- Advertisement Section -->
-          <div class="bg-white p-4 rounded-md shadow-md">
-            <img
-              src="https://via.placeholder.com/300x150"
-              alt="Ad"
-              class="w-full rounded-md"
-            />
-            <p class="text-center mt-2 font-bold">Shape Your Career with Us!</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Service Section -->
-      <div class="mt-6 grid grid-cols-4 gap-4 text-center">
-        <div class="bg-white p-4 rounded-md shadow-md">
-          <button class="bg-orange-500 p-2 w-full rounded-md text-white">
-            Laptop Finder
-          </button>
-        </div>
-        <div class="bg-white p-4 rounded-md shadow-md">
-          <button class="bg-orange-500 p-2 w-full rounded-md text-white">
-            Raise a Complain
-          </button>
-        </div>
-        <div class="bg-white p-4 rounded-md shadow-md">
-          <button class="bg-orange-500 p-2 w-full rounded-md text-white">
-            Online Support
-          </button>
-        </div>
-        <div class="bg-white p-4 rounded-md shadow-md">
-          <button class="bg-orange-500 p-2 w-full rounded-md text-white">
-            Servicing Center
-          </button>
-        </div>
-      </div>
-
-      <!-- Notice -->
-      <p class="mt-4 text-center text-gray-500 text-sm">
-        20th October, Sunday, all our outlets are open except IDB Outlet.
-        Additionally, our online activities are open and operational.
-      </p>
-
-      <!-- Featured Categories Section -->
-      <section class="mt-8">
-        <h2 class="text-center text-2xl font-bold mb-4">Featured Category</h2>
-        <div class="grid grid-cols-6 gap-4">
-          <div class="bg-white p-4 rounded-md shadow-md text-center">
-            <p>AC</p>
-          </div>
-          <div class="bg-white p-4 rounded-md shadow-md text-center">
-            <p>Printer Paper</p>
-          </div>
-          <div class="bg-white p-4 rounded-md shadow-md text-center">
-            <p>Laptop Accessories</p>
-          </div>
-          <div class="bg-white p-4 rounded-md shadow-md text-center">
-            <p>TV</p>
-          </div>
-          <div class="bg-white p-4 rounded-md shadow-md text-center">
-            <p>Mobile Phone</p>
-          </div>
-          <div class="bg-white p-4 rounded-md shadow-md text-center">
-            <p>Mobile Accessories</p>
-          </div>
-          <!-- Add more categories as needed -->
-        </div>
-      </section>
-    </main>
-    <footer class="footer-bg text-gray-300 pt-10">
-      <div class="container mx-auto grid grid-cols-3 gap-8 pb-6">
-        <!-- Support Section -->
-        <div>
-          <h3 class="text-lg font-bold mb-4 footer-text">Support</h3>
-          <div class="flex items-center space-x-4 mb-4">
-            <div
-              class="flex items-center justify-center h-12 w-12 rounded-full bg-gray-700"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="white"
-                class="h-6 w-6"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M3 8l7.89 5.26a3 3 0 003.22 0L21 8M5 19h14a2 2 0 002-2v-7a2 2 0 00-2-2H5a2 2 0 00-2 2v7a2 2 0 002 2z"
-                />
-              </svg>
-            </div>
-            <div>
-              <p>9AM - 8PM</p>
-              <p class="text-2xl font-bold text-orange-500">16793</p>
-            </div>
-          </div>
-          <div class="flex items-center space-x-4">
-            <div
-              class="flex items-center justify-center h-12 w-12 rounded-full bg-gray-700"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="white"
-                class="h-6 w-6"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M3 8l7.89 5.26a3 3 0 003.22 0L21 8M5 19h14a2 2 0 002-2v-7a2 2 0 00-2-2H5a2 2 0 00-2 2v7a2 2 0 002 2z"
-                />
-              </svg>
-            </div>
-            <div>
-              <button class="text-lg font-semibold text-orange-500">
-                Find Our Stores
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <!-- About Us Section -->
-        <div>
-          <h3 class="text-lg font-bold mb-4 footer-text">About Us</h3>
-          <ul class="space-y-2">
-            <li><a href="#" class="footer-text-hover">EMI Terms</a></li>
-            <li><a href="#" class="footer-text-hover">Privacy Policy</a></li>
-            <li><a href="#" class="footer-text-hover">Star Point Policy</a></li>
-            <li><a href="#" class="footer-text-hover">Contact Us</a></li>
-            <li>
-              <a href="#" class="footer-text-hover">Terms and Conditions</a>
-            </li>
-            <li><a href="#" class="footer-text-hover">Career</a></li>
-            <li><a href="#" class="footer-text-hover">Brands</a></li>
-            <li><a href="#" class="footer-text-hover">Online Delivery</a></li>
-            <li>
-              <a href="#" class="footer-text-hover">Refund and Return Policy</a>
-            </li>
-            <li><a href="#" class="footer-text-hover">Blog</a></li>
-          </ul>
-        </div>
-
-        <!-- Stay Connected Section -->
-        <div>
-          <h3 class="text-lg font-bold mb-4 footer-text">Stay Connected</h3>
-          <p>Star Tech Ltd</p>
-          <p>
-            Head Office: 28 Kazi Nazrul Islam Ave, Navana Zohura Square, Dhaka
-            1000
-          </p>
-          <p class="mt-2">
-            Email:
-            <a href="mailto:webteam@startechbd.com" class="text-orange-500"
-              >webteam@startechbd.com</a
-            >
-          </p>
-        </div>
-      </div>
-
-      <!-- Bottom Section -->
-      <div class="border-t border-gray-600 pt-6 pb-4">
-        <div class="container mx-auto flex justify-between items-center">
-          <!-- App Links -->
-          <div>
-            <p class="mb-2">Experience Star Tech App on your mobile:</p>
-            <div class="flex space-x-2">
-              <a href="#"
-                ><img
-                  src="https://via.placeholder.com/150x50"
-                  alt="Google Play"
-                  class="h-8"
-              /></a>
-              <a href="#"
-                ><img
-                  src="https://via.placeholder.com/150x50"
-                  alt="App Store"
-                  class="h-8"
-              /></a>
-            </div>
-          </div>
-
-          <!-- Social Links -->
-          <div class="flex items-center space-x-4">
-            <a href="#"
-              ><img
-                src="https://via.placeholder.com/30"
-                alt="Facebook"
-                class="h-6 w-6"
-            /></a>
-            <a href="#"
-              ><img
-                src="https://via.placeholder.com/30"
-                alt="Twitter"
-                class="h-6 w-6"
-            /></a>
-            <a href="#"
-              ><img
-                src="https://via.placeholder.com/30"
-                alt="YouTube"
-                class="h-6 w-6"
-            /></a>
-            <a href="#"
-              ><img
-                src="https://via.placeholder.com/30"
-                alt="Instagram"
-                class="h-6 w-6"
-            /></a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Copyright -->
-      <div class="bg-gray-900 text-center text-sm py-4">
-        <p class="footer-text">© 2024 Star Tech Ltd | All rights reserved</p>
-      </div>
-    </footer>
+        <button class="my-gradient-background px-6 py-3 rounded-lg">
+          PC Builder
+        </button>
+      </nav>
+    </header>
   </body>
 </html>
