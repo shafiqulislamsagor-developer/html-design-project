@@ -10,7 +10,7 @@
   <body class="max-w-screen-2xl mx-auto bg-white">
     <!-- navbar -->
     <nav
-      class="bg-[#081621] flex items-center justify-between text-white py-4 px-10"
+      class="bg-[#081621] hidden lg:flex items-center justify-between text-white py-4 px-10"
     >
       <a href="index.html"
         ><img
@@ -121,7 +121,7 @@
       </ul>
     </section>
     <div
-      class="py-3 bg-white px-10 text-lg flex items-center gap-3 border-b-2 border-b-slate-300 text-slate-500"
+      class="py-3 bg-white px-10 text-lg flex items-center gap-3 border-b-2 lg:table-row border-b-slate-300 text-slate-500"
     >
       <a href="index.html"
         ><svg
@@ -155,9 +155,9 @@
       </div>
       <div class="w-[95%] mx-auto px-4 py-8">
         <!-- Product Container -->
-        <div class="rounded-lg p-6 flex flex-col lg:flex-row items-center">
+        <div class="rounded-lg lg:p-6 flex flex-col lg:flex-row items-center">
           <!-- Product Image -->
-          <div class="w-full max-w-lg h-[520px] mx-auto">
+          <div class="w-full max-w-lg lg:h-[520px] mx-auto">
             <img
               src="https://www.startech.com.bd/image/cache/catalog/smart-watch/black-shark/gs3/gs3-500x500.webp"
               alt="Black Shark GS3"
@@ -166,15 +166,15 @@
           </div>
 
           <!-- Product Info -->
-          <div class="mx-auto flex-1 py-8 px-4">
+          <div class="mx-auto lg:flex-1 py-8 lg:px-4">
             <!-- Product Header -->
             <div class="border-b pb-4 mb-6">
               <h1 class="text-2xl font-medium mb-5 text-[#3752BD]">
                 Black Shark GS3 1.43" AMOLED Smart Watch
               </h1>
-              <div class="flex flex-wrap gap-4 items-center mt-2">
+              <div class="flex flex-wrap gap-2 lg:gap-4 items-center mt-2">
                 <div
-                  class="font-semibold bg-[#F5F6FC] px-4 py-1 text-base rounded-full"
+                  class="font-semibold bg-[#F5F6FC] px-4 py-1 text-xs lg:text-base rounded-full"
                 >
                   <span class="font-normal">Price:</span>
                   ৳6,825<span class="ml-2 text-gray-500 line-through"
@@ -182,25 +182,25 @@
                   >
                 </div>
                 <div
-                  class="font-semibold bg-[#F5F6FC] px-4 py-1 text-base rounded-full"
+                  class="font-semibold bg-[#F5F6FC] px-4 py-1 text-xs lg:text-base rounded-full"
                 >
                   <span class="font-normal">Regular Price:</span>
                   ৳7,999
                 </div>
                 <div
-                  class="font-semibold bg-[#F5F6FC] px-4 py-1 text-base rounded-full"
+                  class="font-semibold bg-[#F5F6FC] px-4 py-1 text-xs lg:text-base rounded-full"
                 >
                   <span class="font-normal">Status:</span>
                   In Stock
                 </div>
                 <div
-                  class="font-semibold bg-[#F5F6FC] px-4 py-1 text-base rounded-full"
+                  class="font-semibold bg-[#F5F6FC] px-4 py-1 text-xs lg:text-base rounded-full"
                 >
                   <span class="font-normal">Product Code:</span>
                   36208
                 </div>
                 <div
-                  class="font-semibold bg-[#F5F6FC] px-4 py-1 text-base rounded-full"
+                  class="font-semibold bg-[#F5F6FC] px-4 py-1 text-xs lg:text-base rounded-full"
                 >
                   <span class="font-normal">Brand:</span>
                   Black Shark
@@ -247,7 +247,9 @@
               <!-- Right Column (Price & Payment Options) -->
               <div>
                 <h3 class="text-lg font-semibold my-4">Payment Options</h3>
-                <div class="flex gap-5 items-center justify-between">
+                <div
+                  class="flex gap-5 flex-col lg:flex-row lg:items-center justify-between"
+                >
                   <!-- Cash Discount Price -->
                   <div
                     class="flex flex-1 items-center space-x-2 border border-gray-300 rounded-md p-4"
@@ -309,28 +311,28 @@
       </div>
       <div class="bg-[#F2F4F8] py-9">
         <div class="w-[95%] mx-auto">
-          <div class="mx-auto flex space-x-4">
+          <div class="mx-auto flex flex-col gap-5 lg:flex-row lg:space-x-4">
             <!-- Main content area -->
-            <div class="w-3/4">
+            <div class="lg:w-3/4">
               <!-- Tabs -->
-              <div class="flex space-x-4 mb-4">
+              <div class="flex gap-2 lg:space-x-4 mb-4">
                 <button
-                  class="px-4 py-2 text-white bg-orange-500 hover:text-white rounded-md"
+                  class="px-2 lg:px-4 py-2 lg:py-2 text-xs lg:text-base text-white bg-orange-500 hover:text-white rounded-md"
                 >
                   Specification
                 </button>
                 <button
-                  class="px-4 py-2 bg-gray-200 hover:bg-orange-500 hover:text-white rounded-md"
+                  class="px-2 lg:px-4 py-2 lg:py-2 text-xs lg:text-base bg-gray-200 hover:bg-orange-500 hover:text-white rounded-md"
                 >
                   Description
                 </button>
                 <button
-                  class="px-4 py-2 bg-gray-200 hover:bg-orange-500 hover:text-white rounded-md"
+                  class="px-2 lg:px-4 py-2 lg:py-2 text-xs lg:text-base bg-gray-200 hover:bg-orange-500 hover:text-white rounded-md"
                 >
                   Questions (0)
                 </button>
                 <button
-                  class="px-4 py-2 bg-gray-200 hover:bg-orange-500 hover:text-white rounded-md"
+                  class="px-2 lg:px-4 py-2 lg:py-2 text-xs lg:text-base bg-gray-200 hover:bg-orange-500 hover:text-white rounded-md"
                 >
                   Reviews (0)
                 </button>
@@ -349,39 +351,39 @@
                   </h3>
                   <table class="table-auto w-full mt-2">
                     <tbody>
-                      <tr class="border-b-2">
+                      <tr class="border-b-2 flex flex-col lg:table-row">
                         <td class="py-3 px-5 text-gray-600">Display</td>
                         <td class="py-3 px-5">1.3 inch AMOLED Display</td>
                       </tr>
-                      <tr class="border-b-2">
+                      <tr class="border-b-2 flex flex-col lg:table-row">
                         <td class="py-3 px-5 text-gray-600">Memory</td>
                         <td class="py-3 px-5">RAM: &lt;128MB ROM: &lt;128MB</td>
                       </tr>
-                      <tr class="border-b-2">
+                      <tr class="border-b-2 flex flex-col lg:table-row">
                         <td class="py-3 px-5 text-gray-600">Battery</td>
                         <td class="py-3 px-5">21 Day Battery Life (Approx)</td>
                       </tr>
-                      <tr class="border-b-2">
+                      <tr class="border-b-2 flex flex-col lg:table-row">
                         <td class="py-3 px-5 text-gray-600">Connectivity</td>
                         <td class="py-3 px-5">Bluetooth 5.3</td>
                       </tr>
-                      <tr class="border-b-2">
+                      <tr class="border-b-2 flex flex-col lg:table-row">
                         <td class="py-3 px-5 text-gray-600">Material</td>
                         <td class="py-3 px-5">
                           Aluminum Alloy Frame + 1 Button
                         </td>
                       </tr>
-                      <tr class="border-b-2">
+                      <tr class="border-b-2 flex flex-col lg:table-row">
                         <td class="py-3 px-5 text-gray-600">OS</td>
                         <td class="py-3 px-5">Android, iOS</td>
                       </tr>
-                      <tr class="border-b-2">
+                      <tr class="border-b-2 flex flex-col lg:table-row">
                         <td class="py-3 px-5 text-gray-600">SpecialFeatures</td>
                         <td class="py-3 px-5">
                           Heart Rate Monitor, Pedometer, Water Resistant
                         </td>
                       </tr>
-                      <tr class="border-b-2">
+                      <tr class="border-b-2 flex flex-col lg:table-row">
                         <td class="py-3 px-5 text-gray-600">Others</td>
                         <td class="py-3 px-5">
                           Language: English<br />
@@ -406,7 +408,7 @@
                   </h3>
                   <table class="table-auto w-full mt-2 text-sm">
                     <tbody>
-                      <tr class="border-b-2">
+                      <tr class="border-b-2 flex flex-col lg:table-row">
                         <td class="py-3 px-5 text-gray-600">Color</td>
                         <td class="py-3 px-5">Black, Green</td>
                       </tr>
@@ -423,7 +425,7 @@
                   </h3>
                   <table class="table-auto w-full mt-2 text-sm">
                     <tbody>
-                      <tr class="border-b-2">
+                      <tr class="border-b-2 flex flex-col lg:table-row">
                         <td class="py-3 px-5 text-gray-600">Warranty</td>
                         <td class="py-3 px-5">01-year warranty</td>
                       </tr>
@@ -434,7 +436,7 @@
             </div>
 
             <!-- Related Products and Recently Viewed Section -->
-            <div class="w-1/4 space-y-6">
+            <div class="lg:w-1/4 space-y-6">
               <!-- Related Products -->
               <div class="bg-white rounded-md p-4 shadow-md">
                 <h3 class="text-lg font-semibold mb-4">Related Product</h3>
@@ -480,7 +482,7 @@
               </div>
             </div>
           </div>
-          <div class="bg-white shadow rounded-lg p-6 w-[74%] mt-4">
+          <div class="bg-white shadow rounded-lg p-6 lg:w-[74%] mt-4">
             <div class="flex justify-between items-center mb-4">
               <h2 class="text-xl font-semibold">Questions (0)</h2>
               <button
@@ -519,8 +521,10 @@
     </main>
     <!-- Footer -->
     <footer class="bg-[#081621] text-white pt-10 pb-5">
-      <div class="grid grid-cols-8 gap-20 w-[95%] mx-auto">
-        <div class="col-span-2">
+      <div
+        class="grid grid-cols-1 justify-center text-center lg:text-left lg:grid-cols-8 gap-20 w-4/5 lg:w-[95%] mx-auto"
+      >
+        <div class="lg:col-span-2">
           <h1 class="text-lg mb-7">SUPPORT</h1>
           <div
             class="flex mb-6 items-center rounded-full w-full hover:border-[#EF3E1D] cursor-pointer border-slate-500 gap-4 border py-3 px-5"
@@ -563,9 +567,11 @@
             </div>
           </div>
         </div>
-        <div class="col-span-4">
+        <div class="lg:col-span-4">
           <h1 class="text-lg mb-7 uppercase">about us</h1>
-          <div class="flex items-start justify-between text-slate-500">
+          <div
+            class="hidden lg:flex items-start justify-between text-slate-500"
+          >
             <ul class="space-y-4">
               <li>
                 <a
@@ -588,7 +594,6 @@
                   >Star Point Policy</a
                 >
               </li>
-
               <li>
                 <a
                   href="#"
@@ -652,8 +657,88 @@
               </li>
             </ul>
           </div>
+          <!-- mobile list -->
+          <ul class="flex list-disc items-center flex-wrap lg:hidden">
+            <li class="ml-8">
+              <a
+                href="#"
+                class="text-xs lg:text-base hover:underline hover:text-[#EF3E1D]"
+                >EMI Terms</a
+              >
+            </li>
+            <li class="ml-8">
+              <a
+                href="#"
+                class="text-xs lg:text-base hover:underline hover:text-[#EF3E1D]"
+                >Privacy Policy</a
+              >
+            </li>
+            <li class="ml-8">
+              <a
+                href="#"
+                class="text-xs lg:text-base hover:underline hover:text-[#EF3E1D]"
+                >Blog</a
+              >
+            </li>
+            <li class="ml-8">
+              <a
+                href="#"
+                class="text-xs lg:text-base hover:underline hover:text-[#EF3E1D]"
+                >Star Point Policy</a
+              >
+            </li>
+            <li class="ml-8">
+              <a
+                href="#"
+                class="text-xs lg:text-base hover:underline hover:text-[#EF3E1D]"
+                >Contact Us</a
+              >
+            </li>
+            <li class="ml-8">
+              <a
+                href="#"
+                class="text-xs lg:text-base hover:underline hover:text-[#EF3E1D]"
+                >About Us</a
+              >
+            </li>
+            <li class="ml-8">
+              <a
+                href="#"
+                class="text-xs lg:text-base hover:underline hover:text-[#EF3E1D]"
+                >Terms and Conditions</a
+              >
+            </li>
+            <li class="ml-8">
+              <a
+                href="#"
+                class="text-xs lg:text-base hover:underline hover:text-[#EF3E1D]"
+                >Career</a
+              >
+            </li>
+            <li class="ml-8">
+              <a
+                href="#"
+                class="text-xs lg:text-base hover:underline hover:text-[#EF3E1D]"
+                >Brands</a
+              >
+            </li>
+            <li class="ml-8">
+              <a
+                href="#"
+                class="text-xs lg:text-base hover:underline hover:text-[#EF3E1D]"
+                >Online Delivery</a
+              >
+            </li>
+            <li class="ml-8">
+              <a
+                href="#"
+                class="text-xs lg:text-base hover:underline hover:text-[#EF3E1D]"
+                >Refund and Return Policy</a
+              >
+            </li>
+          </ul>
         </div>
-        <div class="col-span-2">
+        <div class="lg:col-span-2">
           <h1 class="text-lg mb-7 uppercase">Stay Connected</h1>
           <h3 class="text-lg mb-2">Star Tech Ltd</h3>
           <p class="text-slate-500 leading-relaxed">
@@ -665,62 +750,64 @@
         </div>
       </div>
       <div
-        class="w-[95%] flex items-center justify-between mx-auto border-t-2 border-b-2 border-slate-600 mt-16 mb-7 py-4"
+        class="w-[95%] flex items-center flex-col lg:flex-row justify-between mx-auto border-t-2 border-b-2 flex flex-col lg:table-row border-slate-600 mt-16 mb-7 gap-6 py-4"
       >
-        <div class="flex items-center gap-7">
+        <div class="flex items-center flex-col lg:flex-row gap-7">
           <p class="text-slate-500">Experience Star Tech App on your mobile:</p>
-          <div
-            class="flex items-center w-40 rounded-lg hover:border-white px-3 py-2 cursor-pointer border-slate-500 gap-4 border"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              xml:space="preserve"
-              viewBox="0 0 16 16"
-              id="google-play"
-              width="24"
-              height="24"
+          <div class="flex items-center gap-3 lg:gap-7">
+            <div
+              class="flex items-center w-40 rounded-lg hover:border-white px-3 py-2 cursor-pointer border-slate-500 gap-4 border"
             >
-              <g
-                fill="none"
-                stroke="#FFFFFF"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-miterlimit="10"
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                xml:space="preserve"
+                viewBox="0 0 16 16"
+                id="google-play"
+                width="24"
+                height="24"
+              >
+                <g
+                  fill="none"
+                  stroke="#FFFFFF"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-miterlimit="10"
+                >
+                  <path
+                    d="M.506 14.073V1.927C.506.829 1.758.144 2.757.695L13.76 6.768a1.39 1.39 0 0 1 0 2.464L2.758 15.305c-1 .552-2.252-.134-2.252-1.232z"
+                  ></path>
+                  <path d="m.97.9 7.35 6.78 3.09 2.85"></path>
+                  <path d="m.94 15.06 7.38-7.38 2.52-2.52"></path>
+                </g>
+              </svg>
+
+              <div>
+                <h3 class="text-slate-400 text-xs">Download on</h3>
+                <h2 class="text-base text-white font-medium">Google Play</h2>
+              </div>
+            </div>
+            <div
+              class="flex items-center w-40 rounded-lg hover:border-white px-3 py-2 cursor-pointer border-slate-500 gap-4 border"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                id="app"
+                width="28"
+                height="28"
+                fill="#FFFFFF"
               >
                 <path
-                  d="M.506 14.073V1.927C.506.829 1.758.144 2.757.695L13.76 6.768a1.39 1.39 0 0 1 0 2.464L2.758 15.305c-1 .552-2.252-.134-2.252-1.232z"
+                  fill-rule="evenodd"
+                  d="M17.564 13.862c-.413.916-.612 1.325-1.144 2.135-.742 1.13-1.79 2.538-3.087 2.55-1.152.01-1.448-.75-3.013-.741-1.564.008-1.89.755-3.043.744-1.297-.012-2.29-1.283-3.033-2.414-2.077-3.16-2.294-6.87-1.013-8.843.91-1.401 2.347-2.221 3.697-2.221 1.375 0 2.24.754 3.376.754 1.103 0 1.775-.756 3.365-.756 1.2 0 2.474.655 3.381 1.785-2.972 1.629-2.49 5.873.514 7.007zM12.463 3.808c.577-.742 1.016-1.788.857-2.858-.944.065-2.047.665-2.692 1.448-.584.71-1.067 1.763-.88 2.787 1.03.031 2.096-.584 2.715-1.377z"
+                  clip-rule="evenodd"
                 ></path>
-                <path d="m.97.9 7.35 6.78 3.09 2.85"></path>
-                <path d="m.94 15.06 7.38-7.38 2.52-2.52"></path>
-              </g>
-            </svg>
+              </svg>
 
-            <div>
-              <h3 class="text-slate-400 text-xs">Download on</h3>
-              <h2 class="text-base text-white font-medium">Google Play</h2>
-            </div>
-          </div>
-          <div
-            class="flex items-center w-40 rounded-lg hover:border-white px-3 py-2 cursor-pointer border-slate-500 gap-4 border"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 20 20"
-              id="app"
-              width="28"
-              height="28"
-              fill="#FFFFFF"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M17.564 13.862c-.413.916-.612 1.325-1.144 2.135-.742 1.13-1.79 2.538-3.087 2.55-1.152.01-1.448-.75-3.013-.741-1.564.008-1.89.755-3.043.744-1.297-.012-2.29-1.283-3.033-2.414-2.077-3.16-2.294-6.87-1.013-8.843.91-1.401 2.347-2.221 3.697-2.221 1.375 0 2.24.754 3.376.754 1.103 0 1.775-.756 3.365-.756 1.2 0 2.474.655 3.381 1.785-2.972 1.629-2.49 5.873.514 7.007zM12.463 3.808c.577-.742 1.016-1.788.857-2.858-.944.065-2.047.665-2.692 1.448-.584.71-1.067 1.763-.88 2.787 1.03.031 2.096-.584 2.715-1.377z"
-                clip-rule="evenodd"
-              ></path>
-            </svg>
-
-            <div>
-              <h3 class="text-slate-400 text-xs">Download on</h3>
-              <h2 class="text-base text-white font-medium">App Store</h2>
+              <div>
+                <h3 class="text-slate-400 text-xs">Download on</h3>
+                <h2 class="text-base text-white font-medium">App Store</h2>
+              </div>
             </div>
           </div>
         </div>
@@ -822,7 +909,7 @@
         </div>
       </div>
       <div
-        class="flex text-slate-500 items-center w-[95%] mx-auto justify-between text-xs"
+        class="flex text-slate-500 flex-col lg:flex-row items-center w-[95%] mx-auto justify-between text-xs"
       >
         <p>© 2024 Star Tech Ltd | All rights reserved</p>
         <p>Powered By: Star Tech</p>
