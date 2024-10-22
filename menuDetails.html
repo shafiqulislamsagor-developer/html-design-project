@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Smartwatch Product Page</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Star Tech Copy</title>
     <link rel="stylesheet" href="index.css" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
   </head>
-  <body class="max-w-screen-2xl mx-auto bg-white">
+  <body>
     <!-- navbar -->
     <nav
       class="bg-[#081621] hidden lg:flex items-center justify-between text-white py-4 px-10"
@@ -147,382 +147,134 @@
         </svg>
       </a>
       /
-      <a href="offer.html" class="hover:underline">details</a>
+      <a href="offer.html" class="hover:underline">menu Details</a>
     </div>
-    <main>
-      <div
-        class="flex items-center justify-between shadow-md w-[95%] mx-auto px-8 rounded-full mt-8 py-4 text-lg font-medium"
-      >
-        <div>
-          <h1>share:</h1>
+    <!-- contain -->
+    <main class="w-[95%] mx-auto flex items-start gap-7 my-10">
+      <div class="space-y-7 hidden lg:block">
+        <div class="bg-white p-4 rounded-md shadow-md w-72">
+          <!-- Price Range Filter -->
+          <h3 class="text-lg font-semibold mb-4">Price Range</h3>
+
+          <!-- Range Slider -->
+          <div class="relative mb-4">
+            <input
+              type="range"
+              min="24500"
+              max="380300"
+              value="24500"
+              class="absolute top-1/2 -translate-y-1/2 w-full h-1 bg-orange-500 rounded-full appearance-none"
+            />
+            <div class="absolute inset-0 flex justify-between items-center">
+              <div
+                class="w-6 h-6 border-4 border-orange-500 bg-white rounded-full"
+              ></div>
+              <div
+                class="w-6 h-6 border-4 border-orange-500 bg-white rounded-full"
+              ></div>
+            </div>
+          </div>
+
+          <!-- Price Values -->
+          <div class="flex mt-16 justify-between">
+            <div class="border rounded-md px-4 py-2">
+              <span>24,500</span>
+            </div>
+            <div class="border rounded-md px-4 py-2">
+              <span>380,300</span>
+            </div>
+          </div>
         </div>
-        <div class="flex items-center gap-5">
-          <h1>Save</h1>
-          <h1>Add to compare</h1>
+
+        <div class="bg-white p-4 rounded-md shadow-md w-72">
+          <!-- Availability Filter -->
+          <div class="">
+            <div
+              class="flex justify-between border-b-2 pb-5 items-center cursor-pointer"
+            >
+              <h3 class="text-lg font-semibold">Availability</h3>
+              <span class="transform rotate-0 transition-transform duration-200"
+                >&#9654;</span
+              >
+              <!-- Arrow icon -->
+            </div>
+            <div class="mt-2 space-y-2">
+              <label class="flex items-center space-x-2">
+                <input
+                  type="checkbox"
+                  class="form-checkbox h-4 w-4 text-orange-500"
+                />
+                <span class="text-sm">In Stock</span>
+              </label>
+              <label class="flex items-center space-x-2">
+                <input
+                  type="checkbox"
+                  class="form-checkbox h-4 w-4 text-orange-500"
+                />
+                <span class="text-sm">Pre Order</span>
+              </label>
+              <label class="flex items-center space-x-2">
+                <input
+                  type="checkbox"
+                  class="form-checkbox h-4 w-4 text-orange-500"
+                />
+                <span class="text-sm">Up Coming</span>
+              </label>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="w-[95%] mx-auto px-4 py-8">
-        <!-- Product Container -->
-        <div class="rounded-lg lg:p-6 flex flex-col lg:flex-row items-center">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+        <div class="bg-white border rounded-lg relative shadow-md p-4">
+          <!-- Save Badge -->
+          <div
+            class="text-white absolute left-0 bg-purple-600 text-xs font-semibold py-1 px-2 rounded-r-full inline-block mb-2"
+          >
+            Save: 2,250₺
+          </div>
+
           <!-- Product Image -->
-          <div class="w-full max-w-lg lg:h-[520px] mx-auto">
+          <div
+            class="w-full h-56 overflow-hidden flex justify-center items-center mb-4"
+          >
             <img
-              src="https://www.startech.com.bd/image/cache/catalog/smart-watch/black-shark/gs3/gs3-500x500.webp"
-              alt="Black Shark GS3"
-              class="rounded-lg w-full h-auto object-cover"
+              src="https://www.startech.com.bd/image/cache/catalog/desktop-pc/desktop-offer/amd-ryzen-5-5600gt-desktop-pc-228x228.webp"
+              alt="Product Image"
+              class="object-cover"
             />
           </div>
 
-          <!-- Product Info -->
-          <div class="mx-auto lg:flex-1 py-8 lg:px-4">
-            <!-- Product Header -->
-            <div class="border-b pb-4 mb-6">
-              <h1 class="text-2xl font-medium mb-5 text-[#3752BD]">
-                Black Shark GS3 1.43" AMOLED Smart Watch
-              </h1>
-              <div class="flex flex-wrap gap-2 lg:gap-4 items-center mt-2">
-                <div
-                  class="font-semibold bg-[#F5F6FC] px-4 py-1 text-xs lg:text-base rounded-full"
-                >
-                  <span class="font-normal">Price:</span>
-                  ৳6,825<span class="ml-2 text-gray-500 line-through"
-                    >৳7,999</span
-                  >
-                </div>
-                <div
-                  class="font-semibold bg-[#F5F6FC] px-4 py-1 text-xs lg:text-base rounded-full"
-                >
-                  <span class="font-normal">Regular Price:</span>
-                  ৳7,999
-                </div>
-                <div
-                  class="font-semibold bg-[#F5F6FC] px-4 py-1 text-xs lg:text-base rounded-full"
-                >
-                  <span class="font-normal">Status:</span>
-                  In Stock
-                </div>
-                <div
-                  class="font-semibold bg-[#F5F6FC] px-4 py-1 text-xs lg:text-base rounded-full"
-                >
-                  <span class="font-normal">Product Code:</span>
-                  36208
-                </div>
-                <div
-                  class="font-semibold bg-[#F5F6FC] px-4 py-1 text-xs lg:text-base rounded-full"
-                >
-                  <span class="font-normal">Brand:</span>
-                  Black Shark
-                </div>
-              </div>
-            </div>
+          <!-- Product Title -->
+          <h3 class="text-lg font-semibold mb-2">
+            AMD Ryzen 5 5600GT Budget Desktop PC
+          </h3>
 
-            <!-- Product Info -->
-            <div class="">
-              <!-- Left Column (Features & Info) -->
-              <div>
-                <h3 class="text-xl font-semibold mb-4">Key Features</h3>
-                <ul class="list-none text-lg list-inside space-y-2 mb-4">
-                  <li>Model: Black Shark GS3</li>
-                  <li>Display: 1.43” AMOLED 60Hz Screen</li>
-                  <li>Heart Rate Monitor, ENC Bluetooth Call</li>
-                  <li>Battery Life: 21 Days Battery Life (Approx.)</li>
-                  <li>MIL-STD-810H Military Test Passed (13 Test Items)</li>
-                </ul>
-                <a
-                  href="#"
-                  class="text-red-600 hover:font-semibold underline text-sm"
-                  >View More Info</a
-                >
+          <!-- Product Features List -->
+          <ul class="text-sm list-disc text-gray-600 pl-4 mb-4">
+            <li>AMD Ryzen 5 5600GT AM4 Processor with Radeon Graphics</li>
+            <li>MSI A520M-A PRO AM4 AMD ATX MOTHERBOARD</li>
+            <li>Team T-Force Vulcan Z 8GB DDR4 3200MHz CL16 Gaming RAM</li>
+            <li>Colorful CN600 PRO 256GB M.2 NVMe SSD</li>
+          </ul>
 
-                <!-- Color Options -->
-                <div class="mt-6">
-                  <h4 class="text-lg font-semibold mb-2">Color:</h4>
-                  <div class="flex space-x-4">
-                    <button
-                      class="px-4 py-2 border border-[#3752BD] font-medium rounded text-lg"
-                    >
-                      Black
-                    </button>
-                    <button
-                      class="px-4 py-2 border border-[#3752BD] font-medium rounded text-lg"
-                    >
-                      Green
-                    </button>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Right Column (Price & Payment Options) -->
-              <div>
-                <h3 class="text-lg font-semibold my-4">Payment Options</h3>
-                <div
-                  class="flex gap-5 flex-col lg:flex-row lg:items-center justify-between"
-                >
-                  <!-- Cash Discount Price -->
-                  <div
-                    class="flex flex-1 items-center space-x-2 border border-gray-300 rounded-md p-4"
-                  >
-                    <input type="radio" name="payment" id="emi" class="" />
-                    <div>
-                      <div class="text-xl font-bold">
-                        6,999৳
-                        <span class="line-through font-medium text-slate-700"
-                          >7,299৳</span
-                        >
-                      </div>
-                      <div class="">Cash Discount Price</div>
-                      <div class="text-xs text-gray-500">
-                        Online / Cash Payment
-                      </div>
-                    </div>
-                  </div>
-                  <!-- EMI Option -->
-                  <div
-                    class="flex flex-1 items-center space-x-2 border border-gray-300 rounded-md p-4"
-                  >
-                    <input type="radio" name="payment" id="emi" class="" />
-                    <div>
-                      <div class="text-xl font-bold">608৳/month</div>
-                      <div class="">Regular Price: 7,299৳</div>
-                      <div class="text-xs text-gray-500">
-                        0% EMI for up to 12 Months***
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Quantity and Buy Button -->
-                <div class="flex items-center space-x-4 my-6">
-                  <div class="flex items-center border text-lg rounded">
-                    <button class="px-4 py-2 font-bold text-xl border-r-2">
-                      -
-                    </button>
-                    <input
-                      type="text"
-                      class="w-12 text-center py-2 text-gray-700"
-                      value="1"
-                    />
-                    <button class="px-4 py-2 border-l-2 font-bold text-xl">
-                      +
-                    </button>
-                  </div>
-                  <button
-                    class="bg-[#3749BB] text-white text-lg font-semibold px-10 py-2 rounded hover:bg-[#2f3ea0] transition"
-                  >
-                    Buy Now
-                  </button>
-                </div>
-              </div>
-            </div>
+          <!-- Price Section -->
+          <div class="flex items-end justify-center gap-3 mb-4">
+            <span class="text-red-500 text-xl font-bold">28,499₺</span>
+            <span class="text-gray-400 line-through">30,749₺</span>
           </div>
-        </div>
-      </div>
-      <div class="bg-[#F2F4F8] py-9">
-        <div class="w-[95%] mx-auto">
-          <div class="mx-auto flex flex-col gap-5 lg:flex-row lg:space-x-4">
-            <!-- Main content area -->
-            <div class="lg:w-3/4">
-              <!-- Tabs -->
-              <div class="flex gap-2 lg:space-x-4 mb-4">
-                <button
-                  class="px-2 lg:px-4 py-2 lg:py-2 text-xs lg:text-base text-white bg-orange-500 hover:text-white rounded-md"
-                >
-                  Specification
-                </button>
-                <button
-                  class="px-2 lg:px-4 py-2 lg:py-2 text-xs lg:text-base bg-gray-200 hover:bg-orange-500 hover:text-white rounded-md"
-                >
-                  Description
-                </button>
-                <button
-                  class="px-2 lg:px-4 py-2 lg:py-2 text-xs lg:text-base bg-gray-200 hover:bg-orange-500 hover:text-white rounded-md"
-                >
-                  Questions (0)
-                </button>
-                <button
-                  class="px-2 lg:px-4 py-2 lg:py-2 text-xs lg:text-base bg-gray-200 hover:bg-orange-500 hover:text-white rounded-md"
-                >
-                  Reviews (0)
-                </button>
-              </div>
 
-              <!-- Specification Table -->
-              <div class="bg-white rounded-md p-4 shadow-md">
-                <h2 class="text-lg font-semibold mb-4">Specification</h2>
-
-                <!-- Basic Information -->
-                <div class="mb-4">
-                  <h3
-                    class="text-sm font-semibold bg-[#F5F6FC] py-3 px-5 rounded text-blue-600"
-                  >
-                    Basic Information
-                  </h3>
-                  <table class="table-auto w-full mt-2">
-                    <tbody>
-                      <tr class="border-b-2 flex flex-col lg:table-row">
-                        <td class="py-3 px-5 text-gray-600">Display</td>
-                        <td class="py-3 px-5">1.3 inch AMOLED Display</td>
-                      </tr>
-                      <tr class="border-b-2 flex flex-col lg:table-row">
-                        <td class="py-3 px-5 text-gray-600">Memory</td>
-                        <td class="py-3 px-5">RAM: &lt;128MB ROM: &lt;128MB</td>
-                      </tr>
-                      <tr class="border-b-2 flex flex-col lg:table-row">
-                        <td class="py-3 px-5 text-gray-600">Battery</td>
-                        <td class="py-3 px-5">21 Day Battery Life (Approx)</td>
-                      </tr>
-                      <tr class="border-b-2 flex flex-col lg:table-row">
-                        <td class="py-3 px-5 text-gray-600">Connectivity</td>
-                        <td class="py-3 px-5">Bluetooth 5.3</td>
-                      </tr>
-                      <tr class="border-b-2 flex flex-col lg:table-row">
-                        <td class="py-3 px-5 text-gray-600">Material</td>
-                        <td class="py-3 px-5">
-                          Aluminum Alloy Frame + 1 Button
-                        </td>
-                      </tr>
-                      <tr class="border-b-2 flex flex-col lg:table-row">
-                        <td class="py-3 px-5 text-gray-600">OS</td>
-                        <td class="py-3 px-5">Android, iOS</td>
-                      </tr>
-                      <tr class="border-b-2 flex flex-col lg:table-row">
-                        <td class="py-3 px-5 text-gray-600">SpecialFeatures</td>
-                        <td class="py-3 px-5">
-                          Heart Rate Monitor, Pedometer, Water Resistant
-                        </td>
-                      </tr>
-                      <tr class="border-b-2 flex flex-col lg:table-row">
-                        <td class="py-3 px-5 text-gray-600">Others</td>
-                        <td class="py-3 px-5">
-                          Language: English<br />
-                          MIL-STD-810H Military Test Passed (13 Test Items)<br />
-                          50m Water Resistance<br />
-                          Shark GPT<br />
-                          AI Watch Faces<br />
-                          Health Monitoring<br />
-                          ENC Bluetooth Call
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-
-                <!-- Exterior Information -->
-                <div class="mb-4">
-                  <h3
-                    class="text-sm font-semibold bg-[#F5F6FC] py-3 px-5 rounded text-blue-600"
-                  >
-                    Exterior
-                  </h3>
-                  <table class="table-auto w-full mt-2 text-sm">
-                    <tbody>
-                      <tr class="border-b-2 flex flex-col lg:table-row">
-                        <td class="py-3 px-5 text-gray-600">Color</td>
-                        <td class="py-3 px-5">Black, Green</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-
-                <!-- Warranty Information -->
-                <div>
-                  <h3
-                    class="text-sm font-semibold bg-[#F5F6FC] py-3 px-5 rounded text-blue-600"
-                  >
-                    Warranty Information
-                  </h3>
-                  <table class="table-auto w-full mt-2 text-sm">
-                    <tbody>
-                      <tr class="border-b-2 flex flex-col lg:table-row">
-                        <td class="py-3 px-5 text-gray-600">Warranty</td>
-                        <td class="py-3 px-5">01-year warranty</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-            </div>
-
-            <!-- Related Products and Recently Viewed Section -->
-            <div class="lg:w-1/4 space-y-6">
-              <!-- Related Products -->
-              <div class="bg-white rounded-md p-4 shadow-md">
-                <h3 class="text-lg font-semibold mb-4">Related Product</h3>
-                <!-- Product 1 -->
-                <div class="flex items-center mb-4">
-                  <img
-                    src="https://via.placeholder.com/60"
-                    alt="Product"
-                    class="w-16 h-16 object-cover rounded-md"
-                  />
-                  <div class="ml-4">
-                    <p class="text-sm font-semibold">
-                      Kieslect Lora Lady BT Smart Watch
-                    </p>
-                    <p class="text-sm text-gray-600">4,890৳</p>
-                    <button class="text-blue-600 text-xs">
-                      Add to Compare
-                    </button>
-                  </div>
-                </div>
-                <!-- More products... -->
-              </div>
-
-              <!-- Recently Viewed -->
-              <div class="bg-white rounded-md p-4 shadow-md">
-                <h3 class="text-lg font-semibold mb-4">Recently Viewed</h3>
-                <!-- Product 1 -->
-                <div class="flex items-center mb-4">
-                  <img
-                    src="https://via.placeholder.com/60"
-                    alt="Product"
-                    class="w-16 h-16 object-cover rounded-md"
-                  />
-                  <div class="ml-4">
-                    <p class="text-sm font-semibold">TCL 40 SE (6/256GB)</p>
-                    <p class="text-sm text-gray-600">11,999৳</p>
-                    <button class="text-blue-600 text-xs">
-                      Add to Compare
-                    </button>
-                  </div>
-                </div>
-                <!-- More products... -->
-              </div>
-            </div>
-          </div>
-          <div class="bg-white shadow rounded-lg p-6 lg:w-[74%] mt-4">
-            <div class="flex justify-between items-center mb-4">
-              <h2 class="text-xl font-semibold">Questions (0)</h2>
-              <button
-                class="text-blue-600 border border-blue-600 rounded px-4 py-2 hover:bg-blue-50"
-              >
-                Ask Question
-              </button>
-            </div>
-            <p class="text-gray-600 mb-6">
-              Have a question about this product? Get specific details about
-              this product from an expert.
-            </p>
-            <div class="flex flex-col items-center justify-center">
-              <div class="bg-blue-100 rounded-full p-4 mb-2">
-                <svg
-                  class="w-8 h-8 text-blue-600"
-                  fill="currentColor"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M18 8a6 6 0 10-11.673 3.956A8.003 8.003 0 001.022 16.87 1 1 0 002 18h16a1 1 0 001-1v-1a8.003 8.003 0 00-6.305-7.956A5.978 5.978 0 0018 8zM10 14a4 4 0 100-8 4 4 0 000 8z"
-                    clip-rule="evenodd"
-                  />
-                </svg>
-              </div>
-              <p class="text-gray-600">
-                There are no questions asked yet. Be the first one to ask a
-                question.
-              </p>
-            </div>
+          <!-- Buy and Compare Buttons -->
+          <div class="space-y-2">
+            <button
+              class="w-full bg-[#3749b60d] text-[#3749BB] font-semibold text-sm py-2 rounded-md hover:text-white hover:bg-[#3749BB] transition duration-200"
+            >
+              Buy Now
+            </button>
+            <button
+              class="w-full text-gray-700 font-medium text-sm py-2 rounded-md hover:bg-gray-100 transition duration-200"
+            >
+              Add to Compare
+            </button>
           </div>
         </div>
       </div>
